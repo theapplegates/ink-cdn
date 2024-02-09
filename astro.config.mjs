@@ -10,7 +10,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 import remarkCodeTitles from 'remark-code-titles';
 import decapCmsOauth from "astro-decap-cms-oauth";
-import { imageService } from "@unpic/astro/service";  
+import { imageService } from "@unpic/astro/service";
+import vercel from '@astrojs/vercel/serverless';
 
 // Full Astro Configuration API Documentation:
 // https://docs.astro.build/reference/configuration-reference
@@ -18,10 +19,8 @@ import { imageService } from "@unpic/astro/service";
 
 // https://astro.build/config
 export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
-  image: {
-    service: imageService(),
-  },
-  output: "server",
+  output: 'server',
+  adapter: vercel(),
   site: 'https://ink-cdn.paulapplegate.com',
   // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   server: {
