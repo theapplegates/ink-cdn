@@ -28,8 +28,8 @@ export const SITE = {
 	name: "Ink",
 	title: "Astro - Ink",
 	description: "Crisp, minimal, personal blog theme for Astro",
-	url: "https://astro-ink.vercel.app",
-	githubUrl: "https://github.com/one-aalam/astro-ink",
+	url: "https://ink-cdn.paulapplegate.com",
+	githubUrl: "https://github.com/theapplegates/astro-ink",
 	listDrafts: true,
 	image:
 		"https://raw.githubusercontent.com/one-aalam/astro-ink/main/public/astro-banner.png",
@@ -55,4 +55,4 @@ export const USE_MEDIA_THUMBNAIL = true;
 export const USE_AUTHOR_CARD = true;
 export const USE_SUBSCRIPTION = false; /* works only when USE_AUTHOR_CARD is true */
 
-export const USE_VIEW_STATS = true;
+export const USE_VIEW_STATS = false;

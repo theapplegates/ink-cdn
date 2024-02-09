@@ -19,8 +19,8 @@ import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
-  output: 'server',
-  adapter: vercel(),
+  output: 'static',
+  // adapter: vercel(),
   site: 'https://ink-cdn.paulapplegate.com',
   // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   server: {
